@@ -1,0 +1,141 @@
+/* ================ Google Font ============== */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+  margin: 0;
+}
+
+html {
+  font-family: 'Lobster', cursive;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background-color: #111827;
+  color: #9ca3af;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sidebar-top,
+.sidebar-middle,
+.sidebar-bottom {
+  width: 80%;
+  margin-bottom: 20px;
+  padding: 16px 0;
+  display: flex;
+  align-items: center;
+  border-bottom: 1.5px solid #9ca3af;
+}
+
+.sidebar-top {
+  margin-top: 20px;
+  padding-bottom: 45px;
+}
+
+.sidebar-bottom {
+  border: none;
+}
+
+.logo {
+  font-size: 2rem;
+  margin-right: 10px;
+  padding-left: 10px;
+  cursor: pointer;
+}
+
+.brand {
+  font-size: 1.375rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.list-item {
+  margin-bottom: 14px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 12px;
+  border-radius: 10px;
+}
+
+.list-item-icon {
+  width: 35px;
+  font-size: 1.5rem;
+}
+
+.list-item:hover,
+.list-item.active {
+  background-color: #374151;
+  color: #f0f8ff;
+}
+
+.color-box {
+  width: 25px;
+  height: 25px;
+  border: 1px solid #e0d5d5d5;
+  border-radius: 3.5px;
+  cursor: pointer;
+  margin-right: 16px;
+}
+
+.dark {
+  background-color: #111827;
+}
+
+.night {
+  background-color: #312e81;
+}
+
+.light {
+  background-color: #f0f8ff;
+}
+
+/* ============== Media Query ============= */
+@media only screen and (max-width: 768px) {
+  .sidebar {
+    width: 65px;
+  }
+
+  .brand,
+  .list-item-text {
+    display: none;
+  }
+
+  .sidebar-bottom {
+    flex-direction: column;
+    justify-items: center;
+  }
+
+  .color-box {
+    margin-bottom: 18px;
+    margin-right: 0;
+  }
+}
+
+.sidebar.night {
+  background-color: #312e81;
+  color: #b4bbc7;
+}
+
+.list-item.active.night {
+  background-color: #4338ca;
+}
+
+.sidebar.light {
+  background-color: #f3f4f6;
+  color: #111827;
+}
+
+.list-item.active.light {
+  background-color: #d1d5db;
+  color: #111827;
+}
