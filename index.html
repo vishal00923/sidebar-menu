@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="responsive sidebar menu" />
+    <meta name="keywords" content="html, css, js" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Responsive | Sidebar Menu</title>
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="sidebar-top">
+        <i class="fab fa-sketch logo"></i>
+        <span class="brand">The App</span>
+      </div>
+      <div class="sidebar-middle">
+        <ul class="list">
+          <li class="list-item">
+            <i class="list-item-icon fas fa-home"></i>
+            <span class="list-item-text">Dashboard</span>
+          </li>
+          <li class="list-item">
+            <i class="list-item-icon fas fa-search"></i>
+            <span class="list-item-text">Search</span>
+          </li>
+          <li class="list-item active">
+            <i class="list-item-icon fas fa-stream"></i>
+            <span class="list-item-text">Insights</span>
+          </li>
+          <li class="list-item">
+            <i class="list-item-icon fas fa-book"></i>
+            <span class="list-item-text">Docs</span>
+          </li>
+          <li class="list-item">
+            <i class="list-item-icon fas fa-users"></i>
+            <span class="list-item-text">Community</span>
+          </li>
+          <li class="list-item">
+            <i class="list-item-icon fas fa-toolbox"></i>
+            <span class="list-item-text">Tools</span>
+          </li>
+          <li class="list-item">
+            <i class="list-item-icon fas fa-shopping-cart"></i>
+            <span class="list-item-text">Market</span>
+          </li>
+          <li class="list-item">
+            <i class="list-item-icon far fa-question-circle"></i>
+            <span class="list-item-text">Resources</span>
+          </li>
+        </ul>
+      </div>
+      <div class="sidebar-bottom">
+        <div class="color-box dark"></div>
+        <div class="color-box night"></div>
+        <div class="color-box light"></div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
